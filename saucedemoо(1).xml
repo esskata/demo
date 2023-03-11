@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+   <id>S1</id>
+   <name>Master</name>
+   <description />
+   <sections>
+      <section>
+         <name>Login page</name>
+         <description />
+         <cases>
+            <case>
+               <id>C2</id>
+               <title>Does the page load</title>
+               <template>Test Case (Text)</template>
+               <type>Other</type>
+               <priority>Medium</priority>
+               <estimate />
+               <references />
+               <custom>
+                  <automation_type>
+                     <id>0</id>
+                     <value>None</value>
+                  </automation_type>
+               </custom>
+            </case>
+            <case>
+               <id>C4</id>
+               <title>Does the logo exist</title>
+               <template>Test Case (Steps)</template>
+               <type>Other</type>
+               <priority>High</priority>
+               <estimate>300</estimate>
+               <references>learn qa</references>
+               <custom>
+                  <automation_type>
+                     <id>0</id>
+                     <value>None</value>
+                  </automation_type>
+                  <steps_separated>
+                     <step>
+                        <index>1</index>
+                        <content>Given: User has navigated to ``https://www.saucedemo.com/``</content>
+                        <expected />
+                     </step>
+                     <step>
+                        <index>2</index>
+                        <content>When user looks for this logo  ![](index.php?/attachments/get/d52e1a04-003c-4894-9b3d-35364c2d42e6)</content>
+                        <expected />
+                     </step>
+                     <step>
+                        <index>3</index>
+                        <content>Then: The logo should be visible at the top center of the page</content>
+                        <expected />
+                     </step>
+                  </steps_separated>
+               </custom>
+            </case>
+            <case>
+               <id>C5</id>
+               <title>Does the astronaut appear</title>
+               <template>Test Case (Text)</template>
+               <type>Other</type>
+               <priority>Medium</priority>
+               <estimate />
+               <references />
+               <custom>
+                  <automation_type>
+                     <id>0</id>
+                     <value>None</value>
+                  </automation_type>
+               </custom>
+            </case>
+            <case>
+               <id>C6</id>
+               <title>Does username input field load (appear)</title>
+               <template>Test Case (Text)</template>
+               <type>Other</type>
+               <priority>Medium</priority>
+               <estimate />
+               <references />
+               <custom>
+                  <automation_type>
+                     <id>0</id>
+                     <value>None</value>
+                  </automation_type>
+               </custom>
+            </case>
+            <case>
+               <id>C7</id>
+               <title>Does login button appear</title>
+               <template>Test Case (Text)</template>
+               <type>Other</type>
+               <priority>Medium</priority>
+               <estimate />
+               <references />
+               <custom>
+                  <automation_type>
+                     <id>0</id>
+                     <value>None</value>
+                  </automation_type>
+               </custom>
+            </case>
+            <case>
+               <id>C8</id>
+               <title>Are the buttons positioned correctly</title>
+               <template>Test Case (Text)</template>
+               <type>Other</type>
+               <priority>Medium</priority>
+               <estimate />
+               <references />
+               <custom>
+                  <automation_type>
+                     <id>0</id>
+                     <value>None</value>
+                  </automation_type>
+               </custom>
+            </case>
+         </cases>
+         <sections>
+            <section>
+               <name>Positive (Happy path) cases</name>
+               <description />
+               <cases>
+                  <case>
+                     <id>C1</id>
+                     <title>Login with valid credentials</title>
+                     <template>Test Case (Text)</template>
+                     <type>Other</type>
+                     <priority>Medium</priority>
+                     <estimate />
+                     <references />
+                     <custom>
+                        <automation_type>
+                           <id>0</id>
+                           <value>None</value>
+                        </automation_type>
+                     </custom>
+                  </case>
+               </cases>
+            </section>
+            <section>
+               <name>Negative cases</name>
+               <description />
+               <cases>
+                  <case>
+                     <id>C3</id>
+                     <title>Login with wrong credentials</title>
+                     <template>Test Case (Text)</template>
+                     <type>Other</type>
+                     <priority>Medium</priority>
+                     <estimate />
+                     <references />
+                     <custom>
+                        <automation_type>
+                           <id>0</id>
+                           <value>None</value>
+                        </automation_type>
+                     </custom>
+                  </case>
+               </cases>
+            </section>
+         </sections>
+      </section>
+      <section>
+         <name>Homepage</name>
+         <description />
+      </section>
+      <section>
+         <name>Arrange items dropdown option menu</name>
+         <description />
+         <cases>
+            <case>
+               <id>C9</id>
+               <title>Does the dropdown exist</title>
+               <template>Test Case (Steps)</template>
+               <type>Other</type>
+               <priority>High</priority>
+               <estimate>300</estimate>
+               <references>number of jira ticket</references>
+               <custom>
+                  <automation_type>
+                     <id>0</id>
+                     <value>None</value>
+                  </automation_type>
+                  <preconds>User has valid credentials and is logged into the home page</preconds>
+                  <steps_separated>
+                     <step>
+                        <index>1</index>
+                        <content>Given: User logs in successfully into the web store with provided credentials and links</content>
+                        <expected />
+                     </step>
+                     <step>
+                        <index>2</index>
+                        <content>When: User looks at the top rights corner of the homepage</content>
+                        <expected />
+                     </step>
+                     <step>
+                        <index>3</index>
+                        <content>Then: User should be able to see a dropdown menu: ![](index.php?/attachments/get/41c1768f-23a2-47bc-ac51-5961fec6e5e1)</content>
+                        <expected />
+                     </step>
+                  </steps_separated>
+               </custom>
+            </case>
+            <case>
+               <id>C10</id>
+               <title>Does it contain all 4 options</title>
+               <template>Test Case (Steps)</template>
+               <type>Other</type>
+               <priority>High</priority>
+               <estimate>600</estimate>
+               <references>number of jira ticket</references>
+               <custom>
+                  <automation_type>
+                     <id>0</id>
+                     <value>None</value>
+                  </automation_type>
+                  <preconds>Expected Dropdown menu:
+Name A-Z
+Name Z-A
+Price Low-High
+Price High-Low</preconds>
+                  <steps_separated>
+                     <step>
+                        <index>1</index>
+                        <content>Given: Dropdown menu is present</content>
+                        <expected />
+                     </step>
+                     <step>
+                        <index>2</index>
+                        <content>When: User clicks on the menu</content>
+                        <expected />
+                     </step>
+                     <step>
+                        <index>3</index>
+                        <content>Then: A list of options from the Preconditions tab should be shown</content>
+                        <expected />
+                     </step>
+                  </steps_separated>
+               </custom>
+            </case>
+            <case>
+               <id>C11</id>
+               <title>Sort by name A-Z</title>
+               <template>Test Case (Steps)</template>
+               <type>Other</type>
+               <priority>High</priority>
+               <estimate>300</estimate>
+               <references>number of jira ticket</references>
+               <custom>
+                  <automation_type>
+                     <id>0</id>
+                     <value>None</value>
+                  </automation_type>
+                  <steps_separated>
+                     <step>
+                        <index>1</index>
+                        <content>Given: Sort by Name A-Z exists</content>
+                        <expected />
+                     </step>
+                     <step>
+                        <index>2</index>
+                        <content>When: User clicks on this option</content>
+                        <expected />
+                     </step>
+                     <step>
+                        <index>3</index>
+                        <content>Then: The items in the list should be sorted alphabetically</content>
+                        <expected />
+                     </step>
+                  </steps_separated>
+               </custom>
+            </case>
+            <case>
+               <id>C12</id>
+               <title>Sort by name Z-A</title>
+               <template>Test Case (Steps)</template>
+               <type>Other</type>
+               <priority>Medium</priority>
+               <estimate>300</estimate>
+               <references>number of jira ticket</references>
+               <custom>
+                  <automation_type>
+                     <id>0</id>
+                     <value>None</value>
+                  </automation_type>
+                  <steps_separated>
+                     <step>
+                        <index>1</index>
+                        <content>Given: Name Z-A ecists</content>
+                        <expected />
+                     </step>
+                     <step>
+                        <index>2</index>
+                        <content>When: I click on this option</content>
+                        <expected />
+                     </step>
+                     <step>
+                        <index>3</index>
+                        <content>Then: Items in the menu should be sorted alphabetically in descending order (from Z to A)</content>
+                        <expected />
+                     </step>
+                  </steps_separated>
+               </custom>
+            </case>
+            <case>
+               <id>C13</id>
+               <title>Sort by price Low-High</title>
+               <template>Test Case (Steps)</template>
+               <type>Other</type>
+               <priority>Medium</priority>
+               <estimate>600</estimate>
+               <references>number of jira ticket</references>
+               <custom>
+                  <automation_type>
+                     <id>0</id>
+                     <value>None</value>
+                  </automation_type>
+                  <preconds>Site: ``https://www.saucedemo.com/``
+Username: problem_user
+Password: secret_sauce</preconds>
+                  <steps_separated>
+                     <step>
+                        <index>1</index>
+                        <content>Given: Sort by price Low-High</content>
+                        <expected />
+                     </step>
+                     <step>
+                        <index>2</index>
+                        <content>When: I click on this option</content>
+                        <expected />
+                     </step>
+                     <step>
+                        <index>3</index>
+                        <content>Then: Items in the menu should be sorted from Low price to High price</content>
+                        <expected />
+                     </step>
+                  </steps_separated>
+               </custom>
+            </case>
+            <case>
+               <id>C14</id>
+               <title>Sort by price High-Low</title>
+               <template>Test Case (Text)</template>
+               <type>Other</type>
+               <priority>Medium</priority>
+               <estimate />
+               <references />
+               <custom>
+                  <automation_type>
+                     <id>0</id>
+                     <value>None</value>
+                  </automation_type>
+               </custom>
+            </case>
+         </cases>
+      </section>
+   </sections>
+</suite>
